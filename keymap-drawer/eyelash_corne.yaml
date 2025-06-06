@@ -13,12 +13,12 @@ layers:
   - U
   - Y
   - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '[', s: '{'}
   - $$mdi:keyboard-tab$$
   - {t: A, h: LGUI}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - S
-  - T
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -28,7 +28,7 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: RGUI}
-  - {t: '''', s: '"'}
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -100,18 +100,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
+  - {t: '`', s: '~'}
+  - {t: '!', h: Sft+=}
+  - {t: '?', h: Sft+=}
   - '#'
   - $
-  - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - {t: Sft+8, h: Sft+9}
+  - {t: '''', h: '#', s: '"'}
+  - {t: 'Sft+[', s: 'Sft+{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - $$mdi:mouse-left-click-outline$$
@@ -121,12 +121,12 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
-  - Ctl+<
+  - Sft+6
+  - Sft+7
+  - {t: Sft+-, s: Sft+_}
+  - {t: NUBS, h: Sft+NUBS}
+  - {t: Sft+', h: Sft+#, s: Sft+"}
+  - Sft+2
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -135,18 +135,18 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - Ctl+~
+  - Sft+0
+  - {t: '`', h: Sft+`, s: '~'}
+  - {t: 'Sft+,', s: Sft+<}
+  - {t: Sft+., s: Sft+>}
+  - {t: Sft+/, s: 'Sft+?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: held}
+  - {t: '$$mdi:backspace$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   Fn:
   - '&studio_unlock'
   - F1
