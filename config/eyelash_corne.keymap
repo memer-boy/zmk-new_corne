@@ -88,10 +88,10 @@
         default_layer {
             display-name = "COLEMAK-DH";
             bindings = <
-&kp ESCAPE  &kp Q        &kp W        &kp F     &kp P                                      &kp B                               &kp UP                &kp J            &kp L                                    &kp U         &kp Y        &kp SEMICOLON  &kp RALT
-&kp TAB     &hml LGUI A  &hml LALT R  &kp S     &kp T                                      &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &hmr RSHFT N                             &hmr RCTRL E  &hmr RALT I  &hmr RGUI O    &kp SQT
-&kp LCTRL   &kp Z        &kp X        &kp C     &kp D                                      &kp V        &kp SPACE              &kp DOWN              &kp K            &kp H                                    &kp COMMA     &kp DOT      &kp FSLH       &kp ENTER
-                                      &kp LGUI  &rgblayer RGB_COLOR_HSB_VAL(242,100,50) 4  &lt 3 SPACE                                               &lt 2 BACKSPACE  &rgblayer RGB_COLOR_HSB_VAL(0,100,50) 2  &kp DELETE
+&kp ESCAPE  &kp Q        &kp W        &kp F                &kp P                                      &kp B                               &kp UP                &kp J            &kp L                                    &kp U         &kp Y        &kp SEMICOLON  &kp LBKT
+&kp TAB     &hml LGUI A  &hml LALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T                          &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &hmr RSHFT N                             &hmr RCTRL E  &hmr RALT I  &hmr RGUI O    &kp MINUS
+&kp LCTRL   &kp Z        &kp X        &kp C                &kp D                                      &kp V        &kp SPACE              &kp DOWN              &kp K            &kp H                                    &kp COMMA     &kp DOT      &kp FSLH       &kp ENTER
+                                      &kp LGUI             &rgblayer RGB_COLOR_HSB_VAL(242,100,50) 4  &lt 3 SPACE                                               &lt 2 BACKSPACE  &rgblayer RGB_COLOR_HSB_VAL(0,100,50) 2  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -112,10 +112,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp RC(APOSTROPHE)
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp RC(TILDE)
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&trans  &kp GRAVE     &hml LS(EQUAL) EXCLAMATION  &hml LS(EQUAL) QUESTION  &kp HASH   &kp DOLLAR                            &mmv MOVE_UP                     &kp PERCENT    &kp AMPERSAND  &kp LPAR    &kp RPAR  &kp RPAR  &kp LS(LBKT)
+&trans  &bt BT_CLR    &mkp LCLK                   &mkp MCLK                &mkp RCLK  &mkp MB4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS      &kp EQUAL      &kp LBKT    &kp RBKT  &kp BSLH  &kp DOUBLE_QUOTES
+&trans  &out OUT_USB  &out OUT_BLE                &none                    &none      &mkp MB5    &trans                    &mmv MOVE_DOWN                   &kp UNDER      &kp PLUS       &kp LBRC    &kp RBRC  &kp PIPE  &kp ENTER
+                                                  &trans                   &trans     &kp SPACE                                                              &kp BACKSPACE  &trans         &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
