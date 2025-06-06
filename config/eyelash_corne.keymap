@@ -72,15 +72,13 @@
             #binding-cells = <2>;
             bindings =
                 <&macro_param_1to1>,
-                <&macro_press>,
-                <&mo MACRO_PLACEHOLDER &macro_param_2to2>,
-                <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>,
+                <&macro_press &mo MACRO_PLACEHOLDER >,
+                <&macro_param_2to2>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&rgb_ug RGB_OFF>;
+                <&macro_param_1to1>,
+                <&macro_release &mo MACRO_PLACEHOLDER>,
+                <&macro_tap &rgb_ug RGB_OFF>;
 
             label = "RGBLAYER";
         };
