@@ -106,11 +106,11 @@ layers:
   - '#'
   - $
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '%'
-  - '&'
-  - (
-  - )
-  - )
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - {t: Sft+8, h: Sft+9}
+  - {t: '''', h: '#', s: '"'}
   - {t: 'Sft+[', s: 'Sft+{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
@@ -121,12 +121,12 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
-  - '"'
+  - Sft+6
+  - Sft+7
+  - {t: Sft+-, s: Sft+_}
+  - {t: NUBS, h: Sft+NUBS}
+  - {t: Sft+', h: Sft+#, s: Sft+"}
+  - Sft+2
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -135,11 +135,11 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
+  - Sft+0
+  - {t: '`', h: Sft+`, s: '~'}
+  - {t: 'Sft+,', s: Sft+<}
+  - {t: Sft+., s: Sft+>}
+  - {t: Sft+/, s: 'Sft+?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
