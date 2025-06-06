@@ -96,7 +96,7 @@
 &kp ESCAPE  &kp Q        &kp W        &kp F                &kp P                      &kp B                               &kp UP                &kp J            &kp L                     &kp U         &kp Y        &kp SEMICOLON  &kp LBKT
 &kp TAB     &hml LGUI A  &hml LALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T          &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &hmr RSHFT N              &hmr RCTRL E  &hmr RALT I  &hmr RGUI O    &kp MINUS
 &kp LCTRL   &kp Z        &kp X        &kp C                &kp D                      &kp V        &kp SPACE              &kp DOWN              &kp K            &kp H                     &kp COMMA     &kp DOT      &kp FSLH       &kp ENTER
-                                      &kp LGUI             &rgblayer 4(240,100,50) 4  &lt 3 SPACE                                               &lt 1 BACKSPACE  &rgblayer 2(37,100,50) 2  &kp DELETE
+                                      &kp LGUI             &rgblayer RGB_COLOR_HSB_VAL(240,100,50) 4  &lt 3 SPACE                                               &lt 1 BACKSPACE  &rgblayer RGB_COLOR_HSB_VAL(37,100,50) 2  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
