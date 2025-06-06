@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - '&rgblayer 4 4(242,100,50)'
+  - '&rgblayer 4 (242,100,50)'
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: NUMBER}
-  - '&rgblayer 2 2(42,100,50)'
+  - '&rgblayer 2 (42,100,50)'
   - $$mdi:backspace-reverse-outline$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
