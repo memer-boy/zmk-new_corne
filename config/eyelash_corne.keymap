@@ -78,10 +78,8 @@
                 <&rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
                 <&macro_param_1to1>,
-                <&macro_release>,
-                <&mo MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&rgb_ug RGB_OFF>;
+                <&macro_release &mo MACRO_PLACEHOLDER>,
+                <&macro_tap &rgb_ug RGB_OFF>;
 
             label = "RGBLAYER";
         };
@@ -96,7 +94,7 @@
 &kp ESCAPE  &kp Q        &kp W        &kp F                &kp P                      &kp B                               &kp UP                &kp J            &kp L                     &kp U         &kp Y        &kp SEMICOLON  &kp LBKT
 &kp TAB     &hml LGUI A  &hml LALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T          &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M            &hmr RSHFT N              &hmr RCTRL E  &hmr RALT I  &hmr RGUI O    &kp MINUS
 &kp LCTRL   &kp Z        &kp X        &kp C                &kp D                      &kp V        &kp SPACE              &kp DOWN              &kp K            &kp H                     &kp COMMA     &kp DOT      &kp FSLH       &kp ENTER
-                                      &kp LGUI             &rgblayer 4 4(242,100,50)  &lt 3 SPACE                                               &lt 1 BACKSPACE  &rgblayer 2 2(42,100,50)  &kp DELETE
+                                      &kp LGUI             &rgblayer 4 (242,100,50)   &lt 3 SPACE                                               &lt 1 BACKSPACE  &rgblayer 2 (42,100,50)   &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
