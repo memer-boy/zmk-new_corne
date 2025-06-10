@@ -101,8 +101,8 @@ layers:
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: '!', h: Sft+=}
-  - {t: '?', h: Sft+=}
+  - {t: Sft+=, h: '!', s: Sft++}
+  - {t: '=', h: Sft+-, s: +}
   - '#'
   - $
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
