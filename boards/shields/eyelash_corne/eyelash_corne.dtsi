@@ -8,6 +8,17 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "eyelash_corne-layouts.dtsi"
 
+#if IS_ENABLED(CONFIG_ZMK_SPLIT)
+    // Code handling split logic
+    #if IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+        // Central uses a different function to check host connection
+        bool connected = zmk_ble_active_profile_is_connected();
+    #else
+        // Peripheral uses this function
+        bool connected = zmk_split_bt_peripheral_is_connected();
+    #endif
+#endif
+
 / {
     chosen {
         zmk,kscan = &kscan0;
