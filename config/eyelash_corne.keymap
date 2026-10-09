@@ -128,10 +128,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4          &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &kp LEFT_SHIFT  &bt BT_CLR                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans          &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans          &trans                                                                          &trans           &trans           &trans
+&none &kp N1           &kp N2          &kp N3        &kp N4          &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&none &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &kp LEFT_SHIFT  &bt BT_CLR                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&none &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &none       &none         &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                                         &none       &none         &none                                                                         &none          &none          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -140,10 +140,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans        &kp RA(Q)     &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                            &mmv MOVE_UP                     &kp LS(NUMBER_6)  &hml RA(MINUS) LS(N7)  &hml LS(NUMBER_1) LS(EQUAL)  &hml LS(NUMBER_9) LS(NUMBER_8)  &hml NUHS SQT          &kp LS(LBKT)
-&trans  &trans        &mkp LCLK     &mkp MCLK         &mkp RCLK         &mkp MB4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N0)        &hml LS(GRAVE) GRAVE   &hml LS(MINUS) EQUAL         &hml LS(NUBS) NUBS              &hml LS(NUHS) LS(SQT)  &kp LS(NUMBER_2)
-&trans  &out OUT_USB  &out OUT_BLE  &none             &none             &mkp MB5    &trans                    &mmv MOVE_DOWN                   &kp RA(SQT)       &kp RA(RIGHT_BRACE)    &kp LS(COMMA)                &kp LS(DOT)                     &kp LS(SLASH)          &kp ENTER
-                                    &trans            &trans            &kp SPACE                                                              &kp BACKSPACE     &trans                 &kp DELETE
+&none &none       &kp RA(Q)     &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                            &mmv MOVE_UP                     &kp LS(NUMBER_6)  &hml RA(MINUS) LS(N7)  &hml LS(NUMBER_1) LS(EQUAL)  &hml LS(NUMBER_9) LS(NUMBER_8)  &hml NUHS SQT          &kp LS(LBKT)
+&none &none       &mkp LCLK     &mkp MCLK         &mkp RCLK         &mkp MB4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N0)        &hml LS(GRAVE) GRAVE   &hml LS(MINUS) EQUAL         &hml LS(NUBS) NUBS              &hml LS(NUHS) LS(SQT)  &kp LS(NUMBER_2)
+&none &out OUT_USB  &out OUT_BLE  &none             &none             &mkp MB5    &none                   &mmv MOVE_DOWN                   &kp RA(SQT)       &kp RA(RIGHT_BRACE)    &kp LS(COMMA)                &kp LS(DOT)                     &kp LS(SLASH)          &kp ENTER
+                                    &none           &none           &kp SPACE                                                              &kp BACKSPACE     &none                &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -153,9 +153,9 @@
             display-name = "Fn";
             bindings = <
 &studio_unlock  &kp F1  &kp F2     &kp F3        &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6         &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans  &mkp LCLK  &mkp MCLK     &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader    &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &trans  &trans     &trans        &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans         &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                   &kp LEFT_GUI  &trans     &trans                                                                   &kp BACKSPACE  &trans     &kp DELETE
+&none         &none &mkp LCLK  &mkp MCLK     &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader    &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&none         &none &none    &none       &none    &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &none        &none    &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                   &kp LEFT_GUI  &none    &none                                                                  &kp BACKSPACE  &none    &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -163,10 +163,10 @@
 
         np_layer {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans        &trans  &studio_unlock                    &trans          &trans         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE
-&kp TAB     &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_SUBTRACT
-&kp LCTRL   &trans  &trans  &trans        &trans  &trans          &trans            &trans          &trans         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE       &kp ENTER
-                            &kp LEFT_GUI  &trans  &kp SPACE                                         &kp BACKSPACE  &kp KP_NUMBER_0  &kp KP_DOT
+&kp ESCAPE  &none &none &none       &none &studio_unlock                    &none         &none        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE
+&kp TAB     &none &none &none       &none &none                   &none &none &none &none        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_SUBTRACT
+&kp LCTRL   &none &none &none       &none &none         &none           &none         &none        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE       &kp ENTER
+                            &kp LEFT_GUI  &none &kp SPACE                                         &kp BACKSPACE  &kp KP_NUMBER_0  &kp KP_DOT
             >;
 
             label = "NUMPAD";
