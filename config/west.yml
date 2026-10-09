@@ -39,6 +39,7 @@ manifest:
           - openthread
           - edtt
           - trusted-firmware-m
+    - name: zmk-behavior-runtime-sensor-rotate
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
     - name: zmk-feature-os-detection
     - name: zmk-feature-default-layer
